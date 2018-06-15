@@ -1,0 +1,125 @@
+%%% activity to draw and calculate are and circumference of circles and sectors.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+
+\documentclass[12pt]{article}
+
+
+
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+
+
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{graphpap}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+
+\geometry{
+letterpaper,
+ textwidth=185mm,
+ textheight=24cm,
+ left=20mm,
+ top=20mm,
+ }
+ 
+%\setlength\topmargin{0cm}
+%\setlength\headheight{0cm}
+%\setlength\headsep{5mm}
+%\setlength\textheight{22cm}
+%\setlength\textwidth{175mm}
+%\setlength\oddsidemargin{0in}
+%\setlength\evensidemargin{0in}
+%\setlength\parindent{0in}
+%\setlength\parskip{1mm}
+
+\input xy
+\xyoption{all}
+
+
+\pagestyle{fancyplain}
+\lhead{Name:}
+\chead{Date:}
+\rhead{Period: }
+\lfoot{Physics}
+\rfoot{RH Cox}
+
+\newcommand{\GUESS}[1]
+{
+\item #1
+
+\setlength\extrarowheight{ 4 mm}
+\begin{tabular} {| p{20mm} | p{6cm} | p{7cm} |}
+\hline
+ Given		&	 	&  Picture and Process \\
+\hline
+Unknowns 	&  	&  \\
+\cline{1-2}
+Equation 		&  	  &\\
+\cline{1-2}
+Solution 		&	  &	  \\
+\hline
+\end{tabular}
+}
+
+\newcommand{\MPS}
+{
+\, \frac{m}{s}
+}
+
+\newcommand{\MPSS}
+{
+\, \frac{m}{s^2}
+}
+\newcommand{\kg}
+{
+\, kg
+}
+
+\newcommand{\meters}
+{
+\, m
+}
+
+
+
+\begin{document}
+
+\begin{center}
+\Large
+\bfseries
+Uniform Circular Motion
+\end{center}
+
+
+\renewcommand\labelenumi{\Roman{enumi}.}
+\renewcommand\labelenumii{\Alph{enumii}.}
+\renewcommand\labelenumiii{\arabic{enumiii}.}
+\renewcommand\labelenumiv{ \alph{enumiv}.}
+
+\large
+%\normalsize
+
+
+\begin{enumerate}
+
+	\GUESS{A mass is being twirled in a circle of radius  $0.4 \meters$.  It makes 10 revolution every second. Calculate the angular velocity.}
+	\GUESS{A mass is being twirled in a circle of radius  $0.7 \meters$.  It makes 16 revolution every second. Calculate the angular velocity. }
+	\GUESS{A mass is being twirled in a circle of radius  $0.4 \meters$.  It makes 10 revolution every second. Calculate the linear velocity.}
+	\GUESS{A mass is being twirled in a circle of radius  $0.7 \meters$.  It makes 15 revolution every second. Calculate the linear velocity.}
+	\newpage
+	\GUESS{A $0.2\kg$  mass is being twirled in a circle of radius  $0.4 \meters$.  It makes 10 revolution every second. Calculate the centripetal force.}
+	\GUESS{A $0.4\kg$ mass is being twirled in a circle of radius  $0.7 \meters$.  It makes 16 revolution every second. Calculate the  centripetal force.}
+	\GUESS{AA $0.2\kg$  mass is being twirled in a circle of radius  $0.4 \meters$.  It makes 10 revolution every second. Calculate the centripetal acceleration?}
+	\GUESS{A $0.4\kg$ mass is being twirled in a circle of radius  $0.7 \meters$.  It makes 16 revolution every second. Calculate the  centripetal accelertion}
+
+\end{enumerate}
+
+
+
+\end{document}
